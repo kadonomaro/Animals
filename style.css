@@ -1,0 +1,177 @@
+
+body{
+    background-color: #f90;
+    background-image: url(images/background-opacity.png);
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', 'Coming Soon', sans-serif;
+	
+}
+
+section {
+    margin: 0px auto;
+    width: 70%;
+    background: linear-gradient(90deg,#f90,#f93,#f90);
+	border-left: 1px solid #960;
+	border-right: 1px solid #960;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p{
+    color: #930;
+    font-size: 36px;
+    text-align: right;
+    line-height: 36px;
+    padding-right: 10px;
+
+}
+nav{
+    margin-top: 80px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul{
+    
+    list-style-type: none;
+}
+.menu li{
+    display: inline-flex;
+    margin-right: 15px;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+    position: relative;
+}
+
+.menu li a:hover{
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666;
+}
+
+.steps{
+    padding-right: 50px;
+    overflow: hidden;
+}
+.steps img {
+    margin-bottom: 50px;
+}
+
+
+.cards {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+main h2 {
+	text-align: center;
+}
+.card-item {
+	width: 180px;
+	border-radius: 8px;
+	background-color: #c60;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 20px;
+	text-align: center;
+}
+.card-item p {
+	text-align: left;
+	background-color: #f90;
+	border: 3px inset #f90;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+
+.card-item:hover{
+	box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.cats-wrap {
+	margin: 10px 10px;
+	display: inline-flex;
+	justify-content: space-between;
+}
+.cats-wrap img:hover {
+	transform: scale(0.9);
+	transition: 0.5s;
+}
+.cats-wrap img {
+	transform: scale(1);
+	transition: 0.5s;
+}
+
+#cats p {
+	font-size: 16px;
+	font-weight: normal;
+	background-image: url("images/sitting-cat.png");
+	background-repeat: no-repeat;
+	background-color: #fc6;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	padding: 10px;
+	
+	
+}
+
+#cats h3{
+	background-color: #fc6;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	
+}
+
+.dogs-wrap {
+	margin: 10px 10px;
+	display: inline-flex;
+	justify-content: space-between;
+}
+.dogs-wrap img:hover {
+	transform: scale(0.9);
+	transition: 0.5s;
+}
+.dogs-wrap img {
+	transform: scale(1);
+	transition: 0.5s;
+}
+
+#dogs p {
+	font-size: 16px;
+	font-weight: normal;
+	background-image: url("images/dog.png");
+	background-repeat: no-repeat;
+	background-color: #fc6;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	padding: 10px;
+}
+
+#dogs h3{
+	background-color: #fc6;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 760px){
+    header p{
+        display: none;
+    }
+	.cards {
+	
+	justify-content: center;
+	
+}
+}
